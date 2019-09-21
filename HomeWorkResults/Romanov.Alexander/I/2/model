@@ -1,0 +1,24 @@
+public static bond;
+
+public static usd {
+
+  market = new market();
+}
+
+public static oplog {
+
+  opdict = new opdict();
+  issuer = new issuer();
+}
+
+public static opdict;
+
+public static market {
+
+  issuer = new issuer();
+}
+
+public static issuer {
+
+  bond = new bond;
+}
