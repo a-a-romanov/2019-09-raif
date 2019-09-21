@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+String cardnum;
+int i;
+int sum;
+int a;
+boolean accept;
+
+public static void main (args(); ) {
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Введите номер карты:");
+
+while (accept == true) {
+
+	cardnum = scanner.nextLine();
+
+	if (cardnum.length != 15) System.out.println("Проверьте номер карты");
+
+	else accept = true;
+}
+
+for (i=0; i<=15; i++) {
+	//берем символ по номеру
+	a = cardnum.charAt(i);
+	
+	a = a * 2;
+	
+	if (a*2>9) {
+		a = a - 9;
+	}
+	
+	sum = sum + a;
+}
+
+if (sum % 10 = 0) System.out.println("Проверка пройдена");
+
+else System.out.println("Проверьте номер карты");
+
+}
